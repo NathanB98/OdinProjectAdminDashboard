@@ -19,12 +19,30 @@ div {
     background-color: lightblue;
 }
 
+.sidebar,
+.sidebar_logo,
+.sidebar_nav,
+.sidebar_tools {
+    display: grid;
+}
+
 .sidebar {
     grid-area: 1 / 1 / 6 / 2;
 
-    display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(1, 1fr) repeat(1, 2.5fr) repeat(1, 2fr);
+}
+
+.sidebar_logo {
+    height: 100px;
+}
+
+.sidebar_nav {
+    height: 320px;
+}
+
+.sidebar_tools {
+    height: 160px;
 }
 
 .main_content {
