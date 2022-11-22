@@ -1,1 +1,31 @@
 /**/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+
+    height: 100vh;
+}
+
+div {
+    border: 1px solid red;
+}
+
+.header {
+    grid-area: 1 / 2 / 2 / 5;
+    background-color: lightblue;
+}
+
+.sidebar {
+    grid-area: 1 / 1 / 6 / 2;
+    background-color: lightgreen;
+}
+
+.main_content {
+    grid-area: 2 / 2 / 6 / 5;
+    background-color: pink;
+}
