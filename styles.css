@@ -21,6 +21,10 @@ div {
 
 .sidebar {
     grid-area: 1 / 1 / 6 / 2;
+
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr) repeat(1, 2.5fr) repeat(1, 2fr);
 }
 
 .main_content {
