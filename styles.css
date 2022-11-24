@@ -14,16 +14,43 @@ div {
     border: 1px solid red;
 }
 
-.header {
-    grid-area: 1 / 2 / 2 / 5;
-}
-
+.header,
+.header_search_container,
+.header_profile_container,
+.header_introduction_container,
+.header_button_container,
 .sidebar,
 .sidebar_logo,
 .sidebar_nav,
 .sidebar_tools {
     display: grid;
 }
+
+/* Header styles */
+
+.header {
+    grid-area: 1 / 2 / 2 / 5;
+
+    grid-template-columns: repeat(1, 2fr) repeat(1, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.header_search_container {
+    grid-template-columns: repeat(1, 1fr) repeat(1, 4fr);
+}
+
+.header_profile_container {
+    grid-template-columns: repeat(2, 1fr) repeat(1, 2fr);
+}
+
+.header_introduction_container {
+    grid-template-columns: repeat(1, 1fr) repeat(1, 3fr);
+}
+
+.header_button_container {
+    grid-template-columns: repeat(3, 1fr);
+}
+/* Sidebar styles */
 
 .sidebar {
     grid-area: 1 / 1 / 6 / 2;
