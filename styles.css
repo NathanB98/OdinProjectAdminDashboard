@@ -24,7 +24,8 @@ div {
 .sidebar_nav,
 .sidebar_tools,
 .main_content,
-.main_content_projects {
+.main_content_projects,
+.main_projects_container {
     display: grid;
 }
 
@@ -88,6 +89,11 @@ div {
 
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(1, 1fr) repeat(1, 10fr);
+}
+
+.main_projects_container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
 }
 
 .main_content_announcements {
