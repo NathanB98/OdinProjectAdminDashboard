@@ -50,6 +50,7 @@ div {
 .header_button_container {
     grid-template-columns: repeat(3, 1fr);
 }
+
 /* Sidebar styles */
 
 .sidebar {
@@ -71,7 +72,8 @@ div {
     height: 160px;
 }
 
+/* Main-content styles */
+
 .main_content {
     grid-area: 2 / 2 / 6 / 5;
-    background-color: pink;
 }
