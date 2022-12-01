@@ -27,7 +27,9 @@ div {
 .main_content_projects,
 .main_projects_container,
 .main_content_announcements,
-.main_content_trending {
+.main_announcements_card,
+.main_content_trending,
+.main_trending_card {
     display: grid;
 }
 
@@ -89,6 +91,8 @@ div {
     padding: 10px 20px 10px 20px;
 }
 
+    /* Main-content Projects styles */
+
 .main_content_projects {
     grid-area: 1 / 1 / 7 / 2;
 }
@@ -97,15 +101,29 @@ div {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
 
-    gap: 15px;
+    gap: 20px;
 }
+
+    /* Main-content Announcement Styles */
 
 .main_content_announcements {
     grid-area: 1 / 2 / 4 / 3;
 }
 
+.main_announcements_card {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+    /* Main-content Trending Styles */
+
 .main_content_trending {
     grid-area: 4 / 2 / 7 / 3;
+}
+
+.main_trending_card {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 1fr);
 }
 
 .main_content_projects,
