@@ -76,4 +76,20 @@ div {
 
 .main_content {
     grid-area: 2 / 2 / 6 / 5;
+
+    display: grid;
+    grid-template-columns: repeat(1, 2fr) repeat(1, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+}
+
+.main_content_projects {
+    grid-area: 1 / 1 / 7 / 2;
+}
+
+.main_content_announcements {
+    grid-area: 1 / 2 / 4 / 3;
+}
+
+.main_content_trending {
+    grid-area: 4 / 2 / 7 / 3;
 }
