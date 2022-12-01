@@ -23,7 +23,8 @@ div {
 .sidebar_logo,
 .sidebar_nav,
 .sidebar_tools,
-.main_content {
+.main_content,
+.main_content_projects {
     display: grid;
 }
 
@@ -84,6 +85,9 @@ div {
 
 .main_content_projects {
     grid-area: 1 / 1 / 7 / 2;
+
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr) repeat(1, 10fr);
 }
 
 .main_content_announcements {
