@@ -25,7 +25,9 @@ div {
 .sidebar_tools,
 .main_content,
 .main_content_projects,
-.main_projects_container {
+.main_projects_container,
+.main_content_announcements,
+.main_content_trending {
     display: grid;
 }
 
@@ -86,9 +88,6 @@ div {
 
 .main_content_projects {
     grid-area: 1 / 1 / 7 / 2;
-
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(1, 1fr) repeat(1, 10fr);
 }
 
 .main_projects_container {
@@ -102,4 +101,11 @@ div {
 
 .main_content_trending {
     grid-area: 4 / 2 / 7 / 3;
+}
+
+.main_content_projects,
+.main_content_announcements,
+.main_content_trending {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr) repeat(1, 10fr);
 }
