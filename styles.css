@@ -41,6 +41,8 @@ div {
 
     grid-template-columns: repeat(1, 2fr) repeat(1, 1fr);
     grid-template-rows: repeat(2, 1fr);
+
+    height: fit-content;
 }
 
 .header_search_container {
@@ -65,7 +67,7 @@ div {
     grid-area: 1 / 1 / 6 / 2;
 
     grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(1, 1fr) repeat(1, 2.5fr) repeat(1, 2fr);
+    grid-template-rows: 125px 345px 185px;
 }
 
 .sidebar_logo {
