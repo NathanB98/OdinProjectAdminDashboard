@@ -5,7 +5,6 @@
 body {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(5, 1fr);
 
     height: 100%;
 }
@@ -26,6 +25,8 @@ div {
 .main_content,
 .main_content_projects,
 .main_projects_container,
+.main_project_card,
+.project_card_btn_container,
 .main_content_announcements,
 .main_announcements_card,
 .main_content_trending,
@@ -40,9 +41,7 @@ div {
     grid-area: 1 / 2 / 2 / 5;
 
     grid-template-columns: repeat(1, 2fr) repeat(1, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-
-    height: fit-content;
+    grid-template-rows: repeat(1, 1fr) repeat(1, 2fr);
 }
 
 .header_search_container {
@@ -71,7 +70,7 @@ div {
 }
 
 .sidebar_logo {
-    height: 100px;
+    height: 90px;
 }
 
 .sidebar_nav {
@@ -94,6 +93,13 @@ div {
     padding: 10px 20px 10px 20px;
 }
 
+.main_content_projects,
+.main_content_announcements,
+.main_content_trending {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr) repeat(1, 10fr);
+}
+
     /* Main-content Projects styles */
 
 .main_content_projects {
@@ -107,6 +113,31 @@ div {
     gap: 20px;
 }
 
+.project_card_title {
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.project_card_desc {
+    grid-area: 2 / 1 / 5 / 2;
+}
+
+.project_card_btn_container {
+    grid-area: 5 / 1 / 6 / 2;
+    
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.project_card_btn_fav {
+    grid-area: 1 / 4 / 2 / 5;
+}
+
+.project_card_btn_watch {
+    grid-area: 1 / 5 / 2 / 6;
+}
+
+.project_card_btn_share {
+    grid-area: 1 / 6 / 2 / 7;
+}
     /* Main-content Announcement Styles */
 
 .main_content_announcements {
@@ -127,13 +158,6 @@ div {
 .main_trending_card {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(4, 1fr);
-}
-
-.main_content_projects,
-.main_content_announcements,
-.main_content_trending {
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(1, 1fr) repeat(1, 10fr);
 }
 
 .main_trending_item {
