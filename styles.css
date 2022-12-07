@@ -29,7 +29,8 @@ div {
 .main_content_announcements,
 .main_announcements_card,
 .main_content_trending,
-.main_trending_card {
+.main_trending_card,
+.main_trending_item {
     display: grid;
 }
 
@@ -131,4 +132,20 @@ div {
 .main_content_trending {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(1, 1fr) repeat(1, 10fr);
+}
+
+.main_trending_item {
+    grid-template-columns: repeat(1, 1fr) repeat(1, 2fr);
+}
+
+.trending_item_img {
+    grid-area: 1 / 1 / 3 / 2;
+}
+
+.trending_item_name {
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.trending_item_desc {
+    grid-area: 2 / 2 / 3 / 3;
 }
