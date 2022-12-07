@@ -10,7 +10,7 @@ body {
 }
 
 div {
-    border: 1px solid red;
+    /*border: 1px solid red;*/
 }
 
 .header,
@@ -42,6 +42,9 @@ div {
 
     grid-template-columns: repeat(1, 2fr) repeat(1, 1fr);
     grid-template-rows: repeat(1, 1fr) repeat(1, 2fr);
+
+    box-shadow: 0 5px 5px -5px gray;
+    position: relative;
 }
 
 .header_search_container {
@@ -58,6 +61,20 @@ div {
 
 .header_button_container {
     grid-template-columns: repeat(3, 1fr);
+
+    justify-items: center;
+    align-items: center;
+}
+
+.header_btn {
+    margin: 5px;
+    border: 0;
+    border-radius: 25px;
+    background-color: #0ea5e9;
+    color: white;
+
+    height: 45px;
+    width: 100px;
 }
 
 /* Sidebar styles */
@@ -67,6 +84,8 @@ div {
 
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: 125px 345px 185px;
+
+    background-color: #0ea5e9;
 }
 
 .sidebar_logo {
@@ -91,6 +110,8 @@ div {
 
     gap: 20px;
     padding: 10px 20px 10px 20px;
+
+    background-color: #f4f4f5 /*Use for search bar inside background*/;
 }
 
 .main_content_projects,
@@ -111,6 +132,13 @@ div {
     grid-template-rows: repeat(3, 1fr);
 
     gap: 20px;
+}
+
+.main_project_card {
+    box-shadow: 5px 5px 5px -4px gray, 0px 0px 5px -1px gray;
+    border-radius: 5px;
+    border-left: solid 10px #f59e0b;
+    background-color: white;
 }
 
 .project_card_title {
