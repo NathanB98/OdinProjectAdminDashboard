@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
 body {
@@ -29,6 +30,10 @@ body {
 .main_trending_card,
 .main_trending_item {
     display: grid;
+}
+
+.sub_text {
+    color: gray;
 }
 
 /* Header styles */
@@ -177,17 +182,6 @@ body {
 .main_announcements_card {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(3, 1fr);
-
-    box-shadow: 5px 5px 5px -4px gray, 0px 0px 5px -1px gray;
-    border-radius: 5px;
-    background-color: white;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-.announcement_1,
-.announcement_2 {
-    border-bottom: solid 1px black;
 }
 
     /* Main-content Trending Styles */
@@ -215,4 +209,26 @@ body {
 
 .trending_item_desc {
     grid-area: 2 / 2 / 3 / 3;
+}
+
+/* Card stylings */
+.main_announcements_card,
+.main_trending_card {
+    box-shadow: 5px 5px 5px -4px gray, 0px 0px 5px -1px gray;
+    border-radius: 5px;
+    background-color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.trending_item_1,
+.trending_item_2,
+.trending_item_3,
+.trending_item_4 {
+    border-bottom: solid 1px gray;
+}
+
+.announcement_1,
+.announcement_2 {
+    border-bottom: solid 1px gray;
 }
