@@ -9,10 +9,6 @@ body {
     height: 100%;
 }
 
-div {
-    /*border: 1px solid red;*/
-}
-
 .header,
 .header_search_container,
 .header_profile_container,
@@ -149,6 +145,12 @@ div {
     grid-area: 2 / 1 / 5 / 2;
 }
 
+.project_card_title,
+.project_card_desc {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
 .project_card_btn_container {
     grid-area: 5 / 1 / 6 / 2;
     
@@ -175,6 +177,17 @@ div {
 .main_announcements_card {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(3, 1fr);
+
+    box-shadow: 5px 5px 5px -4px gray, 0px 0px 5px -1px gray;
+    border-radius: 5px;
+    background-color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.announcement_1,
+.announcement_2 {
+    border-bottom: solid 1px black;
 }
 
     /* Main-content Trending Styles */
