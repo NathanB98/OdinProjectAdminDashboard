@@ -56,6 +56,15 @@ body {
     align-items: center;
 }
 
+.header_search_svg {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+
+    padding-bottom: 10px;
+    padding-right: 5px;
+}
+
 .search_bar {
     border: solid lightgray 1px;
     background-color: #f4f4f5;
